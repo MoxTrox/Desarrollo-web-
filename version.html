@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>SB Admin 2 - Bootstrap Admin Theme</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- MetisMenu CSS -->
+  <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+  <!-- DataTables CSS -->
+  <link href="../vendor/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet">
+
+  <!-- DataTables Responsive CSS -->
+  <link href="../vendor/datatables-responsive/dataTables.responsive.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+        <a class="navbar-brand" href="home.html">Rent a Car</a>
+      </div>
+      <!-- /.navbar-header -->
+
+      <ul class="nav navbar-top-links navbar-right">
+
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+          <ul class="dropdown-menu dropdown-user">
+            <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+            </li>
+            <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+            </li>
+            <li class="divider"></li>
+            <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+            </li>
+          </ul>
+          <!-- /.dropdown-user -->
+        </li>
+        <!-- /.dropdown -->
+      </ul>
+      <!-- /. Menu -->
+
+      <div class="navbar-default sidebar" role="navigation">
+        <div class="sidebar-nav navbar-collapse">
+          <ul class="nav" id="side-menu">
+            <li class="sidebar-search">
+              <div class="input-group custom-search-form">
+                <input type="text" class="form-control" placeholder="Buscar...">
+                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </span>
+              </div>
+              <!-- /input-group -->
+            </li>
+            <li class="active">
+              <a href="home.html"><i class="fa fa-dashboard fa-fw"></i> Home</a>
+            </li>
+
+            <li>
+              <a href="vehiculos.html" class="active"><i class="fa fa-car fa-fw"></i> Vehiculos</a>
+            </li>
+            <li>
+              <a href="clientes.html"><i class="fa fa-user fa-fw"></i> Clientes</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-file-text fa-fw"></i> Renta<span class="fa arrow"></span></a>
+              <ul class="nav nav-second-level">
+                <li>
+                  <a href="arriendo.html"><i class="fa fa-edit fa-fw"></i> Arriendos</a>
+                </li>
+                <li>
+                  <a href="devoluciones.html"><i class="fa fa-edit fa-fw"></i> Devoluciones</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="vendedor.html"><i class="fa fa-user fa-fw"></i> Vendedores</a>
+            </li>
+            <li>
+              <a href="administrador.html"><i class="fa fa-user fa-fw"></i> Administradores</a>
+            </li>
+
+
+            <li>
+              <a href="#"><i class="fa fa-gear fa-fw"></i> Ajustes<span class="fa arrow"></span></a>
+              <ul class="nav nav-second-level">
+
+                <li>
+                  <a href="#">Ajustes de Vehiculos <span class="fa arrow"></span></a>
+                  <ul class="nav nav-third-level">
+                    <li>
+                      <a href="tipovehiculo.html">Tipos de Vehículos</a>
+                    </li>
+                    <li>
+                      <a href="marcarvehiculo">Marcas de Vehículos</a>
+                    </li>
+                    <li>
+                      <a href="modelovehiculo.html">Modelos de Vehículos</a>
+                    </li>
+                    <li>
+                      <a href="version.html">Versiones de Vehículos</a>
+                    </li>
+                    <li>
+                      <a href="combustible.html">Tipos de Combustible</a>
+                    </li>
+                    <li>
+                      <a href="carrocias.html">Tipos de Carrocerias</a>
+                    </li>
+                    <li>
+                      <a href="transmicion.html">Tipos de Transmisiones</a>
+                    </li>
+                    <li>
+                      <a href="traccion.html">Tipos de Tracciones</a>
+                    </li>
+
+                  </ul>
+                  <!-- /.nav-third-level -->
+                </li>
+                <li>
+                  <a href="region.html">Regiones</a>
+                </li>
+                <li>
+                  <a href="ciudades.html">Ciudades</a>
+                </li>
+                <li>
+                  <a href="mediodepago.html">Medios de Pago</a>
+                </li>
+
+
+
+              </ul>
+              <!-- /.nav-second-level -->
+            </li>
+
+          </ul>
+        </div>
+        <!-- /.sidebar-collapse -->
+      </div>
+      <!-- /.navbar-static-side -->
+    </nav>
+
+    <!-- Page Contenido -->
+    <div id="page-wrapper">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 class="page-header">Versiones</h1>
+          </div>
+          <!-- /.col-lg-12 -->
+        </div>
+        <!-- /.row -->
+        <!-- Aquí va el contenido -->
+
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                Lista de Versiones
+              </div>
+              <!-- /.panel-heading -->
+              <div class="panel-body">
+                <table width="100%" class="table table-striped table-bordered table-hover" id="tablita">
+                  <thead>
+                    <tr>
+                      <th>Nombre</th>
+                      <th>Cilindrada</th>
+                      <th>Rendimiento</th>
+                      <th>Modelo</th>
+                      <th>Opciones</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- El contenido de la tabla se carga con ajax -->
+                  </tbody>
+                </table>
+                <!-- acá va el botón nuevo -->
+                <div class="well">
+                  <button type="button" class="btn btn-primary" id="btnNuevaVersion">
+                      Nueva Version
+                    </button>
+                </div>
+
+
+                <!-- Ventana modal nueva Version -->
+                <div class="modal fade" id="modalNuevo" tabindex="-1" role="dialog" aria-labelledby="labelModalnuevo" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="labelModalnuevo">Nueva Version</h4>
+                      </div>
+                      <div class="modal-body">
+                        <!-- Ventana modal form nueva Version -->
+
+                        <form>
+
+                          <div class="row">
+                            <div class="col-lg-6">
+                              <div class="form-group">
+                                <label for="txtNombreVersion">Nombre</label>
+                                <input type="text" class="form-control" id="txtNombreVersion" placeholder="Nombre">
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <div class="form-group">
+                                <label for="txtDetalleVersion">Detalle</label>
+                                <input type="text" class="form-control" id="txtDetalleVersion" placeholder="Detalle">
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="row">
+                            <div class="col-lg-4">
+                              <div class="input-group">
+                                <label for="txtPuertas">Puertas</label>
+                                <input type="number" class="form-control" id="txtPuertas" placeholder="N° Puertas">
+                              </div>
+                            </div>
+                            <div class="col-lg-4">
+                              <div class="input-group">
+                                <label for="txtPasajeros">Pasajeros</label>
+                                <input type="number" class="form-control" id="txtPasajeros" placeholder="N° Pasajeros">
+                              </div>
+                            </div>
+                            <div class="col-lg-4">
+                              <div class="input-group">
+                                <label for="txtCilindrada">Cilindrada</label>
+                                <input type="number" class="form-control" id="txtCilindrada" placeholder="Cilindrada">
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="row">
+                            <div class="col-lg-4">
+                              <div class="input-group">
+                                <label for="txtRendimiento">Rendimiento</label>
+                                <input type="number" class="form-control" id="txtRendimiento" placeholder="Rendimiento">
+                              </div>
+                            </div>
+                            <div class="col-lg-4">
+                              <div class="input-group">
+                                <label for="txtCapacidadMaletero">Capacidad del Maletero</label>
+                                <input type="number" class="form-control" id="txtCapacidadMaletero" placeholder="Capacidad del maletero">
+                              </div>
+                            </div>
+                            <div class="col-lg-4">
+                              <div class="input-group">
+                                <label for="txtAirbags">Airbags</label>
+                                <input type="number" class="form-control" id="txtAirbags" placeholder="N° Airbags">
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="row">
+                            <div class="checkbox">
+                              <label for="checkAire" class="checkbox-inline"><input type="checkbox" value="" id="checkAire">Aire Acondicionado</label>
+                              <label for="checkCierre" class="checkbox-inline"><input type="checkbox" value="" id="checkCierre">Cierre Centralizado</label>
+                              <label for="checkVidrios" class="checkbox-inline"><input type="checkbox" value="" id="checkVidrios">Alza de Vidrios Electricos</label>
+                              <label for="checkCamara" class="checkbox-inline"><input type="checkbox" value="" id="checkCamara">Camara Retroceso</label>
+                            </div>
+                          </div>
+
+                          <div class="row">
+                            <div class="col-lg-4">
+                              <div class="form-group">
+                                <label for="selCombustible">Combustible</label>
+                                <select class="form-control" id="selCombustible">
+
+                                </select>
+                              </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                              <div class="form-group">
+                                <label for="selCarroceria">Carroceria</label>
+                                <select class="form-control" id="selCarroceria">
+
+                                </select>
+                              </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                              <div class="form-group">
+                                <label for="selTransmision">Transmision</label>
+                                <select class="form-control" id="selTransmision">
+
+                                </select>
+                              </div>
+                            </div>
+
+                          </div>
+
+                          <div class="row">
+                            <div class="col-lg-6">
+                              <div class="form-group">
+                                <label for="selTraccion">Traccion</label>
+                                <select class="form-control" id="selTraccion">
+
+                                </select>
+                              </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                              <div class="form-group">
+                                <label for="selModelo">Modelo</label>
+                                <select class="form-control" id="selModelo">
+
+                                </select>
+                              </div>
+                            </div>
+
+                          </div>
+
+
+                        </form>
+
+
+
+
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-primary" id="btnGuardarNuevo">Guardar</button>
+                      </div>
+                    </div>
+                    <!-- /.modal-content -->
+                  </div>
+                  <!-- /.modal-dialog -->
+                </div>
+
+                <!-- Ventana modal Editar Version -->
+                <div class="modal fade" id="modalEditar" tabindex="-1" role="dialog" aria-labelledby="labelModalEditar" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="labelModalEditar">Editar Vehículo</h4>
+                      </div>
+                      <div class="modal-body">
+                        <!-- Ventana modal form Editar Vehiculo -->
+
+                        <form>
+                        <input type="hidden" class="form-control" id="EditarIdVersion" >
+                          <div class="row">
+                            <div class="col-lg-6">
+                              <div class="form-group">
+                                <label for="txtEditarNombreVersion">Nombre</label>
+                                <input type="text" class="form-control" id="txtEditarNombreVersion" placeholder="Nombre">
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <div class="form-group">
+                                <label for="txtEditarDetalleVersion">Detalle</label>
+                                <input type="text" class="form-control" id="txtEditarDetalleVersion" placeholder="Patente">
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="row">
+                            <div class="col-lg-4">
+                              <div class="input-group">
+                                <label for="txtEditarPuertas">Puertas</label>
+                                <input type="number" class="form-control" id="txtEditarPuertas" placeholder="N° Puertas">
+                              </div>
+                            </div>
+                            <div class="col-lg-4">
+                              <div class="input-group">
+                                <label for="txtEditarPasajeros">Pasajeros</label>
+                                <input type="number" class="form-control" id="txtEditarPasajeros" placeholder="N° Pasajeros">
+                              </div>
+                            </div>
+                            <div class="col-lg-4">
+                              <div class="input-group">
+                                <label for="txtEditarCilindrada">Cilindrada</label>
+                                <input type="number" class="form-control" id="txtEditarCilindrada" placeholder="Cilindrada">
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="row">
+                            <div class="col-lg-4">
+                              <div class="input-group">
+                                <label for="txtEditarRendimiento">Rendimiento</label>
+                                <input type="number" class="form-control" id="txtEditarRendimiento" placeholder="Rendimiento">
+                              </div>
+                            </div>
+                            <div class="col-lg-4">
+                              <div class="input-group">
+                                <label for="txtEditarCapacidadMaletero">Capacidad del Maletero</label>
+                                <input type="number" class="form-control" id="txtEditarCapacidadMaletero" placeholder="Capacidad del maletero">
+                              </div>
+                            </div>
+                            <div class="col-lg-4">
+                              <div class="input-group">
+                                <label for="txtEditarAirbags">Airbags</label>
+                                <input type="number" class="form-control" id="txtEditarAirbags" placeholder="N° Airbags">
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="row">
+                            <div class="checkbox">
+                              <label for="checkEditarAire" class="checkbox-inline"><input type="checkbox" value="" id="checkEditarAire">Aire Acondicionado</label>
+                              <label for="checkEditarCierre" class="checkbox-inline"><input type="checkbox" value="" id="checkEditarCierre">Cierre Centralizado</label>
+                              <label for="checkEditarVidrios" class="checkbox-inline"><input type="checkbox" value="" id="checkEditarVidrios">Alza de Vidrios Electricos</label>
+                              <label for="checkEditarCamara" class="checkbox-inline"><input type="checkbox" value="" id="checkEditarCamara">Camara Retroceso</label>
+                            </div>
+                          </div>
+
+                          <div class="row">
+                            <div class="col-lg-4">
+                              <div class="form-group">
+                                <label for="selEditarCombustible">Combustible</label>
+                                <select class="form-control" id="selEditarCombustible">
+
+                                </select>
+                              </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                              <div class="form-group">
+                                <label for="selEditarCarroceria">Carroceria</label>
+                                <select class="form-control" id="selEditarCarroceria">
+
+                                </select>
+                              </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                              <div class="form-group">
+                                <label for="selEditarTransmision">Transmision</label>
+                                <select class="form-control" id="selEditarTransmision">
+
+                                </select>
+                              </div>
+                            </div>
+
+                          </div>
+
+                          <div class="row">
+                            <div class="col-lg-6">
+                              <div class="form-group">
+                                <label for="selEditarTraccion">Traccion</label>
+                                <select class="form-control" id="selEditarTraccion">
+
+                                </select>
+                              </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                              <div class="form-group">
+                                <label for="selEditarModelo">Modelo</label>
+                                <select class="form-control" id="selEditarModelo">
+
+                                </select>
+                              </div>
+                            </div>
+
+                          </div>
+
+                        </form>
+
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-primary" id="btnGuardarEditar">Guardar</button>
+                      </div>
+                    </div>
+                    <!-- /.modal-content -->
+                  </div>
+                  <!-- /.modal-dialog -->
+                </div>
+
+                <!-- Ventana modal Detalle Version -->
+                <div class="modal fade" id="modalDetalle" tabindex="-1" role="dialog" aria-labelledby="labelModalDetalle" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="labelModalDetalle">Detalle Version</h4>
+                      </div>
+                      <div class="modal-body">
+                        <!-- Ventana modal form Detalle Version -->
+
+                        <form>
+
+                          <div class="row">
+                            <div class="col-lg-6">
+                              <div class="form-group">
+                                <label for="txtDetalleNombreVersion">Nombre</label>
+                                <input type="text" class="form-control" id="txtDetalleNombreVersion" placeholder="Nombre" disabled>
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <div class="form-group">
+                                <label for="txtDetalleDetalleVersion">Detalle</label>
+                                <input type="text" class="form-control" id="txtDetalleDetalleVersion" placeholder="Detalle" disabled>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="row">
+                            <div class="col-lg-4">
+                              <div class="input-group">
+                                <label for="txtDetallePuertas">Puertas</label>
+                                <input type="number" class="form-control" id="txtDetallePuertas" placeholder="N° Puertas" disabled>
+                              </div>
+                            </div>
+                            <div class="col-lg-4">
+                              <div class="input-group">
+                                <label for="txtDetallePasajeros">Pasajeros</label>
+                                <input type="number" class="form-control" id="txtDetallePasajeros" placeholder="N° Pasajeros" disabled>
+                              </div>
+                            </div>
+                            <div class="col-lg-4">
+                              <div class="input-group">
+                                <label for="txtDetalleCilindrada">Cilindrada</label>
+                                <input type="number" class="form-control" id="txtDetalleCilindrada" placeholder="Cilindrada" disabled>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="row">
+                            <div class="col-lg-4">
+                              <div class="input-group">
+                                <label for="txtDetalleRendimiento">Rendimiento</label>
+                                <input type="number" class="form-control" id="txtDetalleRendimiento" placeholder="Rendimiento" disabled>
+                              </div>
+                            </div>
+                            <div class="col-lg-4">
+                              <div class="input-group">
+                                <label for="txtDetalleCapacidadMaletero">Capacidad del Maletero</label>
+                                <input type="number" class="form-control" id="txtDetalleCapacidadMaletero" placeholder="Capacidad del maletero" disabled>
+                              </div>
+                            </div>
+                            <div class="col-lg-4">
+                              <div class="input-group">
+                                <label for="txtDetalleAirbags">Airbags</label>
+                                <input type="number" class="form-control" id="txtDetalleAirbags" placeholder="N° Airbags" disabled>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="row">
+                            <div class="checkbox">
+                              <label for="checkDetalleAire" class="checkbox-inline"><input type="checkbox" value="" id="checkDetalleAire" disabled>Aire Acondicionado</label>
+                              <label for="checkDetalleCierre" class="checkbox-inline"><input type="checkbox" value="" id="checkDetalleCierre" disabled>Cierre Centralizado</label>
+                              <label for="checkDetalleVidrios" class="checkbox-inline"><input type="checkbox" value="" id="checkDetalleVidrios" disabled>Alza de Vidrios Electricos</label>
+                              <label for="checkDetalleCamara" class="checkbox-inline"><input type="checkbox" value="" id="checkDetalleCamara" disabled>Camara Retroceso</label>
+                            </div>
+                          </div>
+
+                          <div class="row">
+                            <div class="col-lg-4">
+                              <div class="form-group">
+                                <label for="selDetalleCombustible">Combustible</label>
+                                <select class="form-control" id="selDetalleCombustible" disabled>
+
+                                </select>
+                              </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                              <div class="form-group">
+                                <label for="selDetalleCarroceria">Carroceria</label>
+                                <select class="form-control" id="selDetalleCarroceria" disabled>
+
+                                </select>
+                              </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                              <div class="form-group">
+                                <label for="selDetalleTransmision">Transmision</label>
+                                <select class="form-control" id="selDetalleTransmision" disabled>
+
+                                </select>
+                              </div>
+                            </div>
+
+                          </div>
+
+                          <div class="row">
+                            <div class="col-lg-6">
+                              <div class="form-group">
+                                <label for="selDetalleTraccion">Traccion</label>
+                                <select class="form-control" id="selDetalleTraccion" disabled>
+
+                                </select>
+                              </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                              <div class="form-group">
+                                <label for="selDetalleModelo">Modelo</label>
+                                <select class="form-control" id="selDetalleModelo" disabled>
+
+                                </select>
+                              </div>
+                            </div>
+
+                          </div>
+
+                        </form>
+
+                      </div>
+                      <div class="modal-footer">
+
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+                      </div>
+                    </div>
+                    <!-- /.modal-content -->
+                  </div>
+                  <!-- /.modal-dialog -->
+                </div>
+
+
+                <!-- Ventana modal Eliminar Vehiculo -->
+                <div class="modal fade" id="modalEliminar" tabindex="-1" role="dialog" aria-labelledby="labelModalEliminar" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="labelModalEliminar">Eliminar Version</h4>
+                      </div>
+                      <div class="modal-body">
+                        <!-- Ventana modal form Eliminar Version -->
+
+                        Se eliminará la version con Nombre: <strong>ejemplo</strong>
+
+                      <input type="hidden" class="form-control" id="EliminarIdVersion" >
+
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                        <button type="button" id="btnGuardarEliminar" class="btn btn-danger">Eliminar</button>
+                      </div>
+                    </div>
+                    <!-- /.modal-content -->
+                  </div>
+                  <!-- /.modal-dialog -->
+                </div>
+
+
+
+              </div>
+              <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+          </div>
+          <!-- /.col-lg-12 -->
+        </div>
+
+
+
+      </div>
+      <!-- /.container-fluid -->
+    </div>
+    <!-- /#page-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- jQuery -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- Metis Menu Plugin JavaScript -->
+  <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+
+  <!-- DataTables JavaScript -->
+  <script src="../vendor/datatables/js/jquery.dataTables.min.js"></script>
+  <script src="../vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
+  <script src="../vendor/datatables-responsive/dataTables.responsive.js"></script>
+
+  <!-- Custom Theme JavaScript -->
+  <script src="../dist/js/sb-admin-2.js"></script>
+
+
+  <!-- inicialización de la tabla  -->
+  <script>
+    $(document).ready(function() {
+
+      //carga la tabla con datos desde ajax
+      var table = $('#tablita').DataTable({
+
+        "ajax": {
+          "url": "http://localhost:8081/version/",
+          "dataSrc": ""
+        }, //llama al controller del backEnd
+        "columns": [ //define que campos del json se cargarán en las distintas columnas
+          {
+            "data": "nombre"
+          },
+          {
+            "data": "cilindrada"
+          }, // 4
+          {
+            "data": "rendimiento"
+          }, // 5
+          {
+            "data": "modelo.nombreModelo"
+          } // 16
+        ],
+        rowId: 'idVersion', //define cual es el campo del json que será el id de la fila
+        "columnDefs": [{ //define una columna distinta
+          "targets": 4, // la columna 4 (de los botones) no cargará datos desde el json pero si define contenido por defecto
+          "data": null,
+          "defaultContent": "<button type='button' id='btnDetalleModal' class='btn btn-success btn-circle' ><i class='fa fa-search'></i></button>" +
+            "<button type='button' id='btnEditarModal' class='btn btn-warning btn-circle'><i class='fa fa-pencil'></i></button>" +
+            "<button type='button' id='btnEliminarModal' class='btn btn-danger btn-circle'><i class='fa fa-trash-o'></i></button>"
+
+        }],
+        responsive: true //transforma la tabla en responsiva, cuando cambia el tamaño se agrupan las filas
+      });
+
+
+
+      //Funcion jquery Nuevo
+      $("#btnNuevaVersion").click(function() {
+
+        $('#selCombustible').empty(); // se vacían los selects
+        $('#selCarroceria').empty();
+        $('#selTransmision').empty();
+        $('#selTraccion').empty();
+        $('#selModelo').empty();
+
+        //carga select combustible
+        $.ajax({
+          url: 'http://localhost:8081/combustibles/',
+          dataType: 'json',
+          error: function() {
+            alert("Error en la petición");
+          }
+        }).done(function(marcas) {
+          $.each(marcas, function(i, item) {
+            $('#selCombustible')
+              .append($('<option>', {
+                value: item.idCombustible,
+                text: item.nombreCombustible
+              }));
+          });
+
+        });
+
+        //carga select carroceria
+        $.ajax({
+          url: 'http://localhost:8081/carroceria/',
+          dataType: 'json',
+          error: function() {
+            alert("Error en la petición");
+          }
+        }).done(function(tipos) {
+          $.each(tipos, function(i, item) {
+            $('#selCarroceria')
+              .append($('<option>', {
+                value: item.idCarroceria,
+                text: item.nombreCarroceria
+              }));
+          });
+
+        });
+
+        //carga select transmision
+        $.ajax({
+          url: 'http://localhost:8081/transmision/',
+          dataType: 'json',
+          error: function() {
+            alert("Error en la petición");
+          }
+        }).done(function(tipos) {
+          $.each(tipos, function(i, item) {
+            $('#selTransmision')
+              .append($('<option>', {
+                value: item.idTransmision,
+                text: item.nombreTransmision
+              }));
+          });
+
+        });
+
+        //carga select traccion
+        $.ajax({
+          url: 'http://localhost:8081/traccion/',
+          dataType: 'json',
+          error: function() {
+            alert("Error en la petición");
+          }
+        }).done(function(tipos) {
+          $.each(tipos, function(i, item) {
+            $('#selTraccion')
+              .append($('<option>', {
+                value: item.idTraccion,
+                text: item.nombreTraccion
+              }));
+          });
+
+        });
+
+        //carga select modelo
+        $.ajax({
+          url: 'http://localhost:8081/modelo/',
+          dataType: 'json',
+          error: function() {
+            alert("Error en la petición");
+          }
+        }).done(function(tipos) {
+          $.each(tipos, function(i, item) {
+            $('#selModelo')
+              .append($('<option>', {
+                value: item.idModelo,
+                text: item.nombreModelo
+              }));
+          });
+
+        });
+
+
+        $('#modalNuevo').modal('toggle') //abre o cierra la ventana modal
+      });
+
+
+      //funcion jquery detalle
+      $('table').on('click', '#btnDetalleModal', function() {
+
+        var idVersion = table.row($(this).parents('tr')).id(); //obtengo el id de la fila en la que estaba el boton que hizo click
+
+        $.ajax({
+          url: 'http://localhost:8081/version/' + idVersion, //llamo al controller get y le paso el id
+          dataType: 'json',
+          error: function() {
+            alert("Error en la petición"); //si no obtengo datos arrojo una alerta
+          }
+        }).done(function(data) { // si es satisfactorio en la variable data quedará el objeto con los datos en formato json
+
+          $("#txtDetalleNombreVersion").val(data.nombre); //cargo datos al input text
+          $("#txtDetalleDetalleVersion").val(data.detalle);
+          $("#txtDetallePuertas").val(data.puertas);
+          $("#txtDetallePasajeros").val(data.pasajeros);
+          $("#txtDetalleCilindrada").val(data.cilindrada);
+          $("#txtDetalleRendimiento").val(data.rendimiento);
+          $("#txtDetalleCapacidadMaletero").val(data.capacidadMaletero);
+          $("#txtDetalleAirbags").val(data.airbags);
+          $("#checkDetalleAire").prop('checked', data.aireAcondicionado);
+          $("#checkDetalleCierre").prop('checked', data.cierreCentralizado);
+          $("#checkDetalleVidrios").prop('checked', data.alzaVidriosElectricos);
+          $("#checkDetalleCamara").prop('checked', data.camaraRetroceso);
+
+
+          $('#selDetalleCombustible') //cargo datos a un select
+            .empty() //primero dejo el select vacío
+            .append($('<option>', { //cargo una sola option en el select con su value y su text
+              value: data.combustible.idCombustible,
+              text: data.combustible.nombreCombustible
+            }));
+
+          $('#selDetalleCarroceria')
+            .empty()
+            .append($('<option>', {
+              value: data.carroceria.idCarroceria,
+              text: data.carroceria.nombreCarroceria
+            }));
+
+          $('#selDetalleTransmision')
+            .empty()
+            .append($('<option>', {
+              value: data.transmision.idTransmision,
+              text: data.transmision.nombreTransmision
+            }));
+
+          $('#selDetalleTraccion')
+            .empty()
+            .append($('<option>', {
+              value: data.traccion.idTraccion,
+              text: data.traccion.nombreTraccion
+            }));
+
+          $('#selDetalleModelo')
+            .empty()
+            .append($('<option>', {
+              value: data.modelo.idModelo,
+              text: data.modelo.nombreModelo
+            }));
+
+
+
+          //$.each(function(i, valor){
+          //   texto += "<option value='"+i+"'>"+valor+"</option>";
+          // });
+          //Agregamos en el id "idprovincia" el valor que tenga la variable texto. (todas las provincias).
+          // $("#idprovincia").html(texto);
+
+          $('#modalDetalle').modal('toggle') //abre o cierra la ventana modal
+
+        });
+
+      });
+
+
+      //Funcion Guardar Nuevo Vehiculo
+
+      $('#btnGuardarNuevo').click(function(event) {
+
+        var nombre = $("#txtNombreVersion").val();
+        var detalle = $("#txtDetalleVersion").val();
+        var puertas = $("#txtPuertas").val();
+        var pasajeros = $("#txtPasajeros").val();
+        var cilindrada = $("#txtCilindrada").val();
+        var rendimiento = $("#txtRendimiento").val();
+        var capacidadMaletero = $("#txtCapacidadMaletero").val();
+        var airbags = $("#txtAirbags").val();
+        var aireAcondicionado = $("#checkAire").is(":checked");
+        var cierreCentralizado = $("#checkCierre").is(":checked");
+        var alzaVidriosElectricos = $("#checkVidrios").is(":checked");
+        var camaraRetroceso = $("#checkCamara").is(":checked");
+      /*var aireAcondicionado = $("#checkAire").val();
+        var cierreCentralizado = $("#checkCierre").val();
+        var alzaVidriosElectricos = $("#checkVidrios").val();
+        var camaraRetroceso = $("#checkCamara").val(); */
+        var combustible = $("#selCombustible").val();
+        var carroceria = $("#selCarroceria").val();
+        var transmision = $("#selTransmision").val();
+        var traccion = $("#selTraccion").val();
+        var modelo = $("#selModelo").val();
+
+        var obj ={
+
+                  nombre: nombre,
+                  detalle: detalle,
+                  puertas: puertas,
+                  pasajeros: pasajeros,
+                  cilindrada: cilindrada,
+                  rendimiento: rendimiento,
+                  capacidadMaletero: capacidadMaletero,
+                  airbags: airbags,
+                  aireAcondicionado: aireAcondicionado,
+                  cierreCentralizado: cierreCentralizado,
+                  alzaVidriosElectricos: alzaVidriosElectricos,
+                  camaraRetroceso: camaraRetroceso,
+                  combustible: {
+                  idCombustible: combustible
+                },
+                  carroceria: {
+                  idCarroceria: carroceria
+                  },
+                  transmision: {
+                    idTransmision: transmision
+                  },
+                  traccion: {
+                    idTraccion: traccion
+                  },
+                  modelo: {
+                    idModelo: modelo
+                  }
+              }
+
+        $.ajax({
+          type: "POST",
+          data: JSON.stringify(obj),
+          url: "http://localhost:8081/version/",
+          contentType: "application/json",
+          success: function(response) {
+            table.ajax.reload();//recarga el json
+            table.draw(); //vuelve a generar la tabla
+
+           $('#modalNuevo').modal('hide');
+          }
+        }).fail(function($xhr) {
+          var data = $xhr.responseJSON;
+
+        });
+
+
+      });
+
+
+      //funcion jquery Editar
+      $('table').on('click', '#btnEditarModal', function() {
+        $('#selEditarCombustible').empty(); // se vacían los selects
+        $('#selEditarCarroceria').empty();
+        $('#selEditarTransmision').empty();
+        $('#selEditarTraccion').empty();
+        $('#selEditarModelo').empty();
+
+        //carga select combustible en formulario editar
+        $.ajax({
+          url: 'http://localhost:8081/combustibles/',
+          dataType: 'json',
+          error: function() {
+            alert("Error en la petición");
+          }
+        }).done(function(marcas) {
+          $.each(marcas, function(i, item) {
+            $('#selEditarCombustible')
+              .append($('<option>', {
+                value: item.idCombustible,
+                text: item.nombreCombustible
+              }));
+          });
+
+        });
+        //carga select carroceria en formulario editar
+        $.ajax({
+          url: 'http://localhost:8081/carroceria/',
+          dataType: 'json',
+          error: function() {
+            alert("Error en la petición");
+          }
+        }).done(function(tipos) {
+          $.each(tipos, function(i, item) {
+            $('#selEditarCarroceria')
+              .append($('<option>', {
+                value: item.idCarroceria,
+                text: item.nombreCarroceria
+              }));
+          });
+
+        });
+
+        //carga select transmision en formulario editar
+        $.ajax({
+          url: 'http://localhost:8081/transmision/',
+          dataType: 'json',
+          error: function() {
+            alert("Error en la petición");
+          }
+        }).done(function(tipos) {
+          $.each(tipos, function(i, item) {
+            $('#selEditarTransmision')
+              .append($('<option>', {
+                value: item.idTransmision,
+                text: item.nombreTransmision
+              }));
+          });
+
+        });
+
+        //carga select traccion en formulario editar
+        $.ajax({
+          url: 'http://localhost:8081/traccion/',
+          dataType: 'json',
+          error: function() {
+            alert("Error en la petición");
+          }
+        }).done(function(tipos) {
+          $.each(tipos, function(i, item) {
+            $('#selEditarTraccion')
+              .append($('<option>', {
+                value: item.idTraccion,
+                text: item.nombreTraccion
+              }));
+          });
+
+        });
+
+        //carga select modelo en formulario editar
+        $.ajax({
+          url: 'http://localhost:8081/modelo/',
+          dataType: 'json',
+          error: function() {
+            alert("Error en la petición");
+          }
+        }).done(function(tipos) {
+          $.each(tipos, function(i, item) {
+            $('#selEditarModelo')
+              .append($('<option>', {
+                value: item.idModelo,
+                text: item.nombreModelo
+              }));
+          });
+
+        });
+
+        var idVersion = table.row($(this).parents('tr')).id(); //obtengo el id de la fila en la que estaba el boton que hizo click
+
+        $.ajax({
+          url: 'http://localhost:8081/version/' + idVersion, //llamo al controller get y le paso el id
+          dataType: 'json',
+          error: function() {
+            alert("Error en la petición"); //si no obtengo datos arrojo una alerta
+          }
+        }).done(function(data) { // si es satisfactorio en la variable data quedará el objeto con los datos en formato json
+
+          $("#txtEditarNombreVersion").val(data.nombre); //cargo datos al input text
+          $("#txtEditarDetalleVersion").val(data.detalle);
+          $("#txtEditarPuertas").val(data.puertas);
+          $("#txtEditarPasajeros").val(data.pasajeros);
+          $("#txtEditarCilindrada").val(data.cilindrada);
+          $("#txtEditarRendimiento").val(data.rendimiento);
+          $("#txtEditarCapacidadMaletero").val(data.capacidadMaletero);
+          $("#txtEditarAirbags").val(data.airbags);
+
+          $("#checkEditarAire").prop('checked', data.aireAcondicionado);
+          $("#checkEditarCierre").prop('checked', data.cierreCentralizado);
+          $("#checkEditarVidrios").prop('checked', data.alzaVidriosElectricos);
+          $("#checkEditarCamara").prop('checked', data.camaraRetroceso);
+
+
+              //selecciona la marca del vehiculo dentro de la lista de marcas disponibles
+              $('#selEditarCombustible option[value='+data.combustible.idCombustible+']').attr('selected','selected');
+
+            //selecciona el tipo del vehiculo dentro de la lista de tipos disponibles
+            $('#selEditarCarroceria option[value='+data.carroceria.idCarroceria+']').attr('selected','selected');
+            $('#selEditarTransmision option[value='+data.transmision.idTransmision+']').attr('selected','selected');
+            $('#selEditarTraccion option[value='+data.traccion.idTraccion+']').attr('selected','selected');
+            $('#selEditarModelo option[value='+data.modelo.idModelo+']').attr('selected','selected');
+
+          $("#EditarIdVersion").val(data.idVersion);
+
+
+
+          $('#modalEditar').modal('toggle') //abre o cierra la ventana modal
+
+        });
+
+      });
+
+
+
+      //funcion guardar Editar vehiculo
+      $('#btnGuardarEditar').click(function(event) {
+
+        var nombre = $("#txtEditarNombreVersion").val();
+        var detalle = $("#txtEditarDetalleVersion").val();
+        var puertas = $("#txtEditarPuertas").val();
+        var pasajeros = $("#txtEditarPasajeros").val();
+        var cilindrada = $("#txtEditarCilindrada").val();
+        var rendimiento = $("#txtEditarRendimiento").val();
+        var capacidadMaletero = $("#txtEditarCapacidadMaletero").val();
+        var airbags = $("#txtEditarAirbags").val();
+        var aireAcondicionado = $("#checkEditarAire").is(":checked");
+        var cierreCentralizado = $("#checkEditarCierre").is(":checked");
+        var alzaVidriosElectricos = $("#checkEditarVidrios").is(":checked");
+        var camaraRetroceso = $("#checkEditarCamara").is(":checked");
+        //var aireAcondicionado = $("#checkEditarAire").val();
+        //var cierreCentralizado = $("#checkEditarCierre").val();
+        //var alzaVidriosElectricos = $("#checkEditarVidrios").val();
+        //var camaraRetroceso = $("#checkEditarCamara").val();
+        var combustible = $("#selEditarCombustible").val();
+        var carroceria = $("#selEditarCarroceria").val();
+        var transmision = $("#selEditarTransmision").val();
+        var traccion = $("#selEditarTraccion").val();
+        var modelo = $("#selEditarModelo").val();
+        var id = $("#EditarIdVersion").val();
+
+        var obj ={
+
+                  nombre: nombre,
+                  detalle: detalle,
+                  puertas: puertas,
+                  pasajeros: pasajeros,
+                  cilindrada: cilindrada,
+                  rendimiento: rendimiento,
+                  capacidadMaletero: capacidadMaletero,
+                  airbags: airbags,
+                  aireAcondicionado: aireAcondicionado,
+                  cierreCentralizado: cierreCentralizado,
+                  alzaVidriosElectricos: alzaVidriosElectricos,
+                  camaraRetroceso: camaraRetroceso,
+                  combustible: {
+                  idCombustible: combustible
+                },
+                  carroceria: {
+                  idCarroceria: carroceria
+                  },
+                  transmision: {
+                    idTransmision: transmision
+                  },
+                  traccion: {
+                    idTraccion: traccion
+                  },
+                  modelo: {
+                    idModelo: modelo
+                  }
+              }
+
+        $.ajax({
+          type: "PUT",
+          data: JSON.stringify(obj),
+          url: "http://localhost:8081/version/"+id,
+          contentType: "application/json",
+          success: function(response) {
+            table.ajax.reload();//recarga el json
+            table.draw(); //vuelve a generar la tabla
+
+           $('#modalEditar').modal('hide');
+          }
+        }).fail(function($xhr) {
+          var data = $xhr.responseJSON;
+
+        });
+
+
+      });
+
+
+      //funcion jquery Eliminar modal
+      $('table').on('click', '#btnEliminarModal', function() {
+
+        var idVersion = table.row($(this).parents('tr')).id(); //obtengo el id de la fila en la que estaba el boton que hizo click
+
+        $("#EliminarIdVersion").val(idVersion);
+
+        $('#modalEliminar').modal('toggle') //abre o cierra la ventana modal
+
+      });
+
+
+      $('#btnGuardarEliminar').click(function(event) {
+
+
+        var id = $("#EliminarIdVersion").val();
+
+
+        $.ajax({
+          type: "DELETE",
+          url: "http://localhost:8081/version/"+id,
+          contentType: "application/json",
+          success: function(response) {
+            table.ajax.reload();//recarga el json
+            table.draw(); //vuelve a generar la tabla
+
+           $('#modalEliminar').modal('hide');
+          }
+        }).fail(function($xhr) {
+          var data = $xhr.responseJSON;
+
+        });
+
+
+      });
+
+
+    });
+  </script>
+
+</body>
+
+</html>
